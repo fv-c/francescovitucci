@@ -1,0 +1,2 @@
+User-agent: *
+Sitemap: https://fv-c.github.io/francescovitucci//sitemap.xml
