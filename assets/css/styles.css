@@ -2006,10 +2006,27 @@ header.research-index-header-main .research-index-title h1.research-title {
   font-weight: 400;
   font-size: 0.75em;
 }
-.researchContentWrapper .linksWrapper {
+.researchContentWrapper .affiliationWrapper {
   width: 100%;
   min-height: 70px;
   margin: 80px auto 40px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+.researchContentWrapper .affiliationWrapper .affiliations {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: space-around;
+  gap: 30px;
+}
+.researchContentWrapper .linksWrapper {
+  width: 100%;
+  min-height: 70px;
+  margin: 40px auto 40px auto;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -2152,12 +2169,16 @@ header.research-index-header-main .research-index-title h1.research-title {
 .researchContentWrapper .bibWrapper .bibItem .url {
   color: #517AF4;
 }
+.researchContentWrapper .bibWrapper .bibItem .year {
+  font-family: "Open Sans", Arial, sans-serif;
+  font-weight: 400;
+}
 .researchContentWrapper .bibWrapper .bibItem .author {
   font-family: "Open Sans", Arial, sans-serif;
-  font-weight: 700;
+  font-weight: 400;
 }
 .researchContentWrapper .bibWrapper .bibItem .title {
-  font-weight: 500;
+  font-weight: 600;
   font-style: italic;
 }
 .researchContentWrapper .bibWrapper .bibItem .journal {
