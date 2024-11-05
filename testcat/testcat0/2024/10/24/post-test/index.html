@@ -230,6 +230,16 @@
         </div>
     
 </div>
+<script>
+    document.querySelectorAll('.copy-btn').forEach(button => {
+    button.addEventListener('click', () => {
+        navigator.clipboard.writeText(button.nextElementSibling.innerText).then(() => {
+            button.classList.add('copied');
+            setTimeout(() => button.classList.remove('copied'), 2000);
+        });
+    });
+});
+</script>
         <footer class="footer-wrapper">
     <div id="contact" class="contact-slug">
         <h2>Contact</h2>
