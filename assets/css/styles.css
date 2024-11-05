@@ -1354,6 +1354,10 @@ header.archive-index-header-main .archive-index-title h1.archive-title {
 .blogPostContentWrapper a.lg-blockquote:hover {
   color: #9EA3B4;
 }
+.blogPostContentWrapper .lilyFragmentImg {
+  width: 50%;
+  min-width: 250px;
+}
 .blogPostContentWrapper .blogCateoriesWrapper {
   display: flex;
   flex-direction: column;
