@@ -1209,6 +1209,7 @@ header.blog-index-header-main .blog-index-title a.read-featured-blog-post:hover 
   position: relative;
   display: inline-block;
   width: 100%;
+  background: #f8f8f8;
 }
 .code-container .copy-btn {
   position: absolute;
