@@ -1210,8 +1210,8 @@ header.blog-index-header-main .blog-index-title a.read-featured-blog-post:hover 
   display: inline-block;
   width: 100%;
 }
-.code-container pre {
-  padding-top: 15px;
+.code-container .highlight {
+  padding-top: 50px;
 }
 .code-container .copy-btn {
   position: absolute;
