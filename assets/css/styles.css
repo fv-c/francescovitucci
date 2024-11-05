@@ -349,6 +349,9 @@ nav.nav-wrap a.nav-logo svg {
   height: 100%;
   width: auto;
 }
+nav.nav-wrap a.nav-logo svg path {
+  fill: #FFFFFF;
+}
 nav.nav-wrap a.nav-logo.nav-dark svg path {
   fill: #1C1E24;
 }
