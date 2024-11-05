@@ -1209,11 +1209,10 @@ header.blog-index-header-main .blog-index-title a.read-featured-blog-post:hover 
   position: relative;
   display: inline-block;
   width: 100%;
-  margin: 15px;
 }
 .code-container .copy-btn {
   position: absolute;
-  right: 10px;
+  right: 15px;
   top: -15px;
   padding: 5px 10px;
   font-size: 12px;
@@ -1231,9 +1230,9 @@ header.blog-index-header-main .blog-index-title a.read-featured-blog-post:hover 
   border-color: #bbb;
 }
 .code-container .copy-btn.copied {
-  background-color: #4CAF50;
+  background-color: #517AF4;
   color: white;
-  border-color: #4CAF50;
+  border-color: #517AF4;
 }
 
 header.archive-index-header-main {
