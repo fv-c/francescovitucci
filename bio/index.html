@@ -159,7 +159,7 @@
             <a href="https://fv-c.github.io/francescovitucci/bio" class="internal-link-wrapper"><div class="link-titles-wrapper"><h5>Bio</h5><small>Who is Francesco Vitucci?</small></div><div class="internal-link-icon internal-link-icon-bio"></div></a>
             <a href="https://fv-c.github.io/francescovitucci/works" class="internal-link-wrapper"><div class="link-titles-wrapper"><h5>Works</h5><small>What does he do?</small></div><div class="internal-link-icon internal-link-icon-works"></div></a>
             <a href="https://fv-c.github.io/francescovitucci/research" class="internal-link-wrapper"><div class="link-titles-wrapper"><h5>Research</h5><small>Sharing is caring</small></div><div class="internal-link-icon internal-link-icon-research"></div></a>
-            <a href="https://fv-c.github.io/francescovitucci/events" class="internal-link-wrapper"><div class="link-titles-wrapper"><h5>Events</h5><small>Concerts, conferences and more</small></div><div class="internal-link-icon internal-link-icon-events"></div></a>
+            <a href="https://fv-c.github.io/francescovitucci/events" class="internal-link-wrapper"><div class="link-titles-wrapper"><h5>Events</h5><small>What's happening?</small></div><div class="internal-link-icon internal-link-icon-events"></div></a>
             <a href="https://fv-c.github.io/francescovitucci/blog" class="internal-link-wrapper"><div class="link-titles-wrapper"><h5>Blog</h5><small>News, thoughts, music</small></div><div class="internal-link-icon internal-link-icon-blog"></div></a>
         </div>
         <hr/>
@@ -176,8 +176,8 @@
     <div class="bio-index-title">
         <h1 class="bio-title">Bio</h1>
         <div class="bio-language-buttons">
-            <button class="toggle-btn selected" onclick="toggleBio('en')">ENG</button>
-            <button class="toggle-btn" onclick="toggleBio('it')">ITA</button>
+            <a class="toggle-btn selected" onclick="toggleBio('en')" href="#bio-wrapper">ENG</a>
+            <a class="toggle-btn" onclick="toggleBio('it')" href="#bio-wrapper">ITA</a>
         </div>
     </div>
 </header>
@@ -186,7 +186,7 @@
     <p>Download</p>
     <img src="https://fv-c.github.io/francescovitucci/assets/img/icons/markdown.svg" alt="">
 </button>
-<div class="bio-wrapper">
+<div class="bio-wrapper" id="bio-wrapper">
     <div id="bio-en" class="bio-content visible">
         <div class="bioSection first">
     <p>Francesco Vitucci, born in 1991, is a composer from Grumo Appula (Bari - Italy).</p>
@@ -565,6 +565,21 @@
     $('.nav-toggle-open-wrapper, .nav-toggle-close-wrapper, header .nav-toggle-body-overlay').on('click', function () {
         $('html').toggleClass('nav-open');
     });
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+
+        const targetElement = document.querySelector(this.getAttribute('href'));
+
+        if (targetElement) {
+            window.scrollTo({
+                top: targetElement.offsetTop,
+                behavior: 'smooth'
+            });
+        }
+    });
+});
 </script>
   <script>
     $('.bioSection h2').after('<hr class="bioSectionSeparator">')
@@ -585,9 +600,15 @@
       // Trova il contenuto di biografia visibile
       const visibleBio = document.querySelector('.bio-content.visible');
 
+      // Crea una copia del contenuto per rimuovere le immagini senza alterare l'originale
+      const bioClone = visibleBio.cloneNode(true);
+
+      // Rimuovi tutte le immagini dal contenuto clonato
+      bioClone.querySelectorAll('img').forEach(img => img.remove());
+
       // Inizializza Turndown e converti l'HTML in Markdown
       const turndownService = new TurndownService();
-      const markdownText = turndownService.turndown(visibleBio.innerHTML);
+      const markdownText = turndownService.turndown(bioClone.innerHTML);
 
       // Aggiungi la riga di attribuzione e la licenza
       const attribution = "\n\n---\n\n" +

@@ -439,10 +439,10 @@ nav.nav-wrap ul.navigation.nav-dark li a:hover {
 }
 .toggled-nav-wrapper hr {
   width: 100%;
-  margin: 30px 0 60px 0;
+  margin: 20px 0 10px 0;
 }
 .toggled-nav-wrapper .internal-nav-links-wrapper {
-  margin-top: 30px;
+  margin-top: 10px;
   height: 300px;
 }
 .toggled-nav-wrapper .internal-nav-links-wrapper a.internal-link-wrapper {
@@ -479,7 +479,7 @@ nav.nav-wrap ul.navigation.nav-dark li a:hover {
 }
 
 .internal-link-icon-works {
-  background-image: url("../img/icons/works.svg");
+  background-image: url("../img/icons/works2.svg");
 }
 
 .internal-link-icon-research {
