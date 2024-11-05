@@ -122,6 +122,9 @@ $(document).ready(function () {
       if (work.soundcloud_url) {
         workElement += `<div class="workLink"><img class="workLinkIcon" src="../assets/img/icons/soundcloud.svg"><a href="${work.soundcloud_url}" target="_blank" class="workSoundcloudLink">Listen on SoundCloud</a></div>`;
       }
+      if (work.genericplay_url) {
+        workElement += `<div class="workLink"><img class="workLinkIcon" src="../assets/img/icons/headphones.svg"><a href="${work.genericplay_url}" target="_blank" class="workGenericPlayLink">Listen!</a></div>`;
+      }
       if (work.youtube_url) {
         workElement += `<div class="workLink"><img class="workLinkIcon" src="../assets/img/icons/youtube.svg"><a href="${work.youtube_url}" target="_blank" class="workYoutubeLink">Watch on YouTube</a></div>`;
       }
