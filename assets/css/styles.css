@@ -1227,7 +1227,7 @@ header.blog-index-header-main .blog-index-title a.read-featured-blog-post:hover 
   border-bottom: 1px solid #ddd;
   color: #333;
 }
-.code-container .code-header .language-label {
+.code-container .code-header span {
   font-weight: bold;
   color: #666;
 }
