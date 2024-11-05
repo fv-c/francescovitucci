@@ -1209,6 +1209,7 @@ header.blog-index-header-main .blog-index-title a.read-featured-blog-post:hover 
   position: relative;
   display: inline-block;
   width: 100%;
+  margin: 15px;
 }
 .code-container .copy-btn {
   position: absolute;
@@ -1223,8 +1224,6 @@ header.blog-index-header-main .blog-index-title a.read-featured-blog-post:hover 
   border-radius: 4px;
   transition: all 0.3s ease;
   font-family: Arial, sans-serif;
-  display: flex;
-  align-items: center;
 }
 .code-container .copy-btn:hover {
   background-color: #f0f0f0;
@@ -1235,11 +1234,6 @@ header.blog-index-header-main .blog-index-title a.read-featured-blog-post:hover 
   background-color: #4CAF50;
   color: white;
   border-color: #4CAF50;
-}
-.code-container .copy-btn.copied::after {
-  content: " Copied!";
-  font-size: 12px;
-  margin-left: 5px;
 }
 
 header.archive-index-header-main {
