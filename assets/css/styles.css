@@ -1205,6 +1205,43 @@ header.blog-index-header-main .blog-index-title a.read-featured-blog-post:hover 
   padding: 0 20px;
 }
 
+.code-container {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+}
+.code-container .copy-btn {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  padding: 5px 10px;
+  font-size: 12px;
+  cursor: pointer;
+  background-color: transparent;
+  color: #555;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+  font-family: Arial, sans-serif;
+  display: flex;
+  align-items: center;
+}
+.code-container .copy-btn:hover {
+  background-color: #f0f0f0;
+  color: #333;
+  border-color: #bbb;
+}
+.code-container .copy-btn.copied {
+  background-color: #4CAF50;
+  color: white;
+  border-color: #4CAF50;
+}
+.code-container .copy-btn.copied::after {
+  content: " Copied!";
+  font-size: 12px;
+  margin-left: 5px;
+}
+
 header.archive-index-header-main {
   position: relative;
   z-index: 1;
