@@ -1222,9 +1222,6 @@ header.blog-index-header-main .blog-index-title a.read-featured-blog-post:hover 
   border-radius: 3px;
   transition: background-color 0.2s;
 }
-.code-container:hover {
-  background-color: #e0e0e0;
-}
 
 header.archive-index-header-main {
   position: relative;
