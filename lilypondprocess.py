@@ -3,6 +3,8 @@ import os
 import subprocess
 from datetime import datetime
 
+site_url = "https://fv-c.github.io/francescovitucci"
+
 lilypond_path = "/Users/master/Documents/lilypond-2.24.3/bin/lilypond"
 
 # Cartella di output per le partiture
@@ -19,7 +21,7 @@ for root, dirs, files in os.walk("_site"):
 
             # Trova tutti i div con classe lilyFragment
             lilypond_blocks = re.findall(r'<div class="lilyFragment">(.*?)</div>', content, re.DOTALL)
-            
+            print(lilypond_blocks)
             for code in lilypond_blocks:
                 # Genera un nome file unico usando data e ora
                 timestamp = datetime.now().strftime("%Y%m%d_%H%M%S_%f")
@@ -38,7 +40,7 @@ for root, dirs, files in os.walk("_site"):
                 
                 # Sostituisci il div nel contenuto con l’immagine SVG
                 svg_path = f"{output_path}.svg"
-                img_tag = f'<img src="{svg_path}" alt="Partitura generata">'
+                img_tag = f'<img src="{site_url}/assets/img/scores/{filename}-{timestamp}" alt="Partitura generata" class="lilyFragmentImg">'
                 content = content.replace(f'<div class="lilyFragment">{code}</div>', img_tag)
 
             # Salva le modifiche nel file HTML
