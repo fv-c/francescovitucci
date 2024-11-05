@@ -581,6 +581,28 @@
     });
 });
 </script>
+
+<script>
+    document.querySelectorAll('.copy-btn').forEach(button => {
+    button.addEventListener('click', () => {
+        // Salva il testo originale
+        const originalText = button.textContent;
+        
+        // Copia il contenuto del blocco di codice
+        navigator.clipboard.writeText(button.nextElementSibling.innerText).then(() => {
+            // Cambia il testo del pulsante a "Copied" e applica la classe di feedback
+            button.textContent = "Copied";
+            button.classList.add('copied');
+            
+            // Torna al testo originale dopo 2 secondi
+            setTimeout(() => {
+                button.textContent = originalText;
+                button.classList.remove('copied');
+            }, 2000);
+        });
+    });
+});
+</script>
   <script>
     $('.bioSection h2').after('<hr class="bioSectionSeparator">')
 
