@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", function () {
   upcomingEventsContainer.querySelector(".loading-message").style.display = "block";
   concludedEventsContainer.querySelector(".loading-message").style.display = "block";
 
-  fetch("/assets/events.json")
+  fetch("../assets/events.json")
     .then((response) => response.json())
     .then((events) => {
       // Rimuove il messaggio di caricamento

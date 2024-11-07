@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const upcomingEventsContainer = document.querySelector(".upcoming-events");
     const concludedEventsContainer = document.querySelector(".concluded-events");
 
-    fetch("/assets/events.json")
+    fetch("../assets/events.json")
         .then((response) => response.json())
         .then((events) => {
             // Ordina gli eventi per data in ordine decrescente (più recente prima)
