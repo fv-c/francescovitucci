@@ -242,7 +242,7 @@
         recommendedPosts.forEach(post => {
             html += `
             <div class="blogPostContainer">
-                <a href="${post.url}" class="blogPostFeatImg" style="background-image: url('${siteUrl}/assets/img/blog/lowRes/${post.featImg}');"></a>
+                <a href="${post.url}" class="blogPostFeatImg" style="background-image: url('${site.url}/assets/img/blog/lowRes/${post.featImg}');"></a>
                 <a href="${post.url}" class="blogCategory">${post.categories}</a>
                 <a href="${post.url}" class="blogTitle">${post.title}</a>
                 <p class="blogExcerpt">${post.excerpt}</p>
