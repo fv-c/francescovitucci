@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 
                 const eventElement = `
                     <div class="${isUpcoming ? "upcoming-event" : "concluded-event"} ${event.status === "cancelled" ? "cancelled" : ""}">
-                        <img src="/assets/img/icons/${event.status === "cancelled" ? "exclamation" : "concluded"}.svg" alt="">
+                        <img src="{{ site.url }}/assets/img/icons/${event.status === "cancelled" ? "exclamation" : "concluded"}.svg" alt="">
                         <div class="event-info">
                             <p class="date-event">${new Date(event.date).toLocaleDateString()}</p>
                             ${event.time ? `<p class="time-event">${event.time}</p>` : ""}
