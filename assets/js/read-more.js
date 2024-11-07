@@ -1,7 +1,7 @@
 const siteUrl = "{{ site.url }}";
     document.addEventListener("DOMContentLoaded", async function () {
         // Leggi il file JSON
-        const response = await fetch("../assets/posts.json");
+        const response = await fetch("./assets/posts.json");
         const posts = await response.json();
 
         // Recupera le categorie del post corrente come array di stringhe
