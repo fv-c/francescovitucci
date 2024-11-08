@@ -1,4 +1,7 @@
 document.addEventListener("DOMContentLoaded", function () {
+
+    siteUrl = '{{ site.url }}'
+
     const today = new Date().toISOString().split("T")[0];
     const upcomingEventsContainer = document.querySelector(".upcoming-events");
     const concludedEventsContainer = document.querySelector(".concluded-events");
@@ -20,7 +23,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 
                 const eventElement = `
                     <div class="${isUpcoming ? "upcoming-event" : "concluded-event"} ${event.status === "cancelled" ? "cancelled" : ""}">
-                        <img src='{{ site.url }}/assets/img/icons/${event.status === "cancelled" ? "exclamation" : "concluded"}.svg' alt="">
+                        <img src='${siteUrl}/assets/img/icons/${event.status === "cancelled" ? "exclamation" : "concluded"}.svg' alt="">
                         <div class="event-info">
                             <p class="date-event">${new Date(event.date).toLocaleDateString()}</p>
                             ${event.time ? `<p class="time-event">${event.time}</p>` : ""}

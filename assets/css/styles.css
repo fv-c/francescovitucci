@@ -2150,10 +2150,16 @@ header.research-index-header-main .research-index-title h1.research-title {
 }
 .researchContentWrapper .affiliationWrapper .affiliations {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-content: center;
   justify-content: space-around;
   gap: 30px;
+}
+.researchContentWrapper .affiliationWrapper .affiliations a img {
+  max-width: 250px;
+}
+.researchContentWrapper .affiliationWrapper .affiliations a svg {
+  max-width: 250px;
 }
 .researchContentWrapper .linksWrapper {
   width: 100%;

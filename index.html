@@ -205,7 +205,58 @@
 
 <hr>
 
-<script src="https://fv-c.github.io/francescovitucci/assets/js/events-on-index.js"></script>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+
+siteUrl = 'https://fv-c.github.io/francescovitucci'
+
+const today = new Date().toISOString().split("T")[0];
+const upcomingEventsContainer = document.querySelector(".upcoming-events");
+const concludedEventsContainer = document.querySelector(".concluded-events");
+
+fetch("./assets/events.json")
+    .then((response) => response.json())
+    .then((events) => {
+        // Ordina gli eventi per data in ordine decrescente (più recente prima)
+        events.sort((a, b) => new Date(b.date) - new Date(a.date));
+
+        let countUpcoming = 0;
+        let countConcluded = 0;
+        const limitUpcoming = 2;  // Limita a 2 eventi futuri
+        const limitConcluded = 1; // Limita a 1 evento passato
+
+        events.forEach((event) => {
+            const eventDate = event.date;
+            const isUpcoming = eventDate >= today;
+            
+            const eventElement = `
+                <div class="${isUpcoming ? "upcoming-event" : "concluded-event"} ${event.status === "cancelled" ? "cancelled" : ""}">
+                    <img src='${siteUrl}/assets/img/icons/${event.status === "cancelled" ? "exclamation" : "concluded"}.svg' alt="">
+                    <div class="event-info">
+                        <p class="date-event">${new Date(event.date).toLocaleDateString()}</p>
+                        ${event.time ? `<p class="time-event">${event.time}</p>` : ""}
+                        ${event.location ? `<p class="place-event">${event.location}</p>` : ""}
+                        ${event.type ? `<p class="type-event">${event.type}</p>` : ""}
+                    </div>
+                    <h2>${event.title}</h2>
+                    ${event.description ? `<p>${event.description}</p>` : ""}
+                    ${event.status === "cancelled" ? `<div class="overlay">Cancelled</div>` : ""}
+                </div>
+            `;
+
+            // Inserisce l'evento nella sezione corretta rispettando i limiti
+            if (isUpcoming && countUpcoming < limitUpcoming) {
+                upcomingEventsContainer.innerHTML += eventElement;
+                countUpcoming++;
+            } else if (!isUpcoming && countConcluded < limitConcluded) {
+                concludedEventsContainer.innerHTML += eventElement;
+                countConcluded++;
+            }
+        });
+    })
+    .catch((error) => console.error("Error fetching events:", error));
+});
+</script>
 
         <footer class="footer-wrapper">
     <div id="contact" class="contact-slug">
@@ -221,7 +272,6 @@
     <a href="mailto:francescovitucci1@gmail.com" class="footer-email">francescovitucci1@gmail.com</a>
 </footer>
         <script type="text/javascript" src="https://fv-c.github.io/francescovitucci/assets/js/jquery-3.7.1.min.js"></script>
-<!-- <script type="text/javascript" src="https://fv-c.github.io/francescovitucci/assets/js/functions.js"></script> -->
 <script>
     $('.toggled-nav-wrapper').on('click', function (e) {
         e.stopPropagation();
@@ -231,53 +281,33 @@
     });
 
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
-        e.preventDefault();
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
 
-        const targetElement = document.querySelector(this.getAttribute('href'));
+            const targetElement = document.querySelector(this.getAttribute('href'));
 
-        if (targetElement) {
-            window.scrollTo({
-                top: targetElement.offsetTop,
-                behavior: 'smooth'
-            });
-        }
+            if (targetElement) {
+                window.scrollTo({
+                    top: targetElement.offsetTop,
+                    behavior: 'smooth'
+                });
+            }
+        });
     });
-});
 </script>
 
 <script>
-//     document.querySelectorAll('.copy-btn').forEach(button => {
-//     button.addEventListener('click', () => {
-//         // Salva il testo originale
-//         const originalText = button.textContent;
-        
-//         // Copia il contenuto del blocco di codice
-//         navigator.clipboard.writeText(button.nextElementSibling.innerText).then(() => {
-//             // Cambia il testo del pulsante a "Copied" e applica la classe di feedback
-//             button.textContent = "Copied";
-//             button.classList.add('copied');
-            
-//             // Torna al testo originale dopo 2 secondi
-//             setTimeout(() => {
-//                 button.textContent = originalText;
-//                 button.classList.remove('copied');
-//             }, 2000);
-//         });
-//     });
-// });
-document.querySelectorAll('.copy-btn').forEach(button => {
-    button.addEventListener('click', () => {
-        const originalText = button.textContent;
-        button.textContent = "Copied";
-        button.classList.add('copied');
-        setTimeout(() => {
-            button.textContent = originalText;
-            button.classList.remove('copied');
-        }, 2000);
+    document.querySelectorAll('.copy-btn').forEach(button => {
+        button.addEventListener('click', () => {
+            const originalText = button.textContent;
+            button.textContent = "Copied";
+            button.classList.add('copied');
+            setTimeout(() => {
+                button.textContent = originalText;
+                button.classList.remove('copied');
+            }, 2000);
+        });
     });
-});
-
 </script>
     </body>
 </html>
