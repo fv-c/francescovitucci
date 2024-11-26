@@ -1,27 +1,3 @@
 [
   
-  {
-    "title": "Post Test 3",
-    "url": "/testcat0/2024/11/06/post-test3/",
-    "categories": "testcat0",
-    "excerpt": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vel odio pharetra, sodales orci eu, aliquet tellus. Nunc dignissim lorem quis enim iaculis tempus dictum in mauris.",
-    "featImg": "2024-11-06-post-test.jpg"
-  },
-  
-  {
-    "title": "Post Test 2",
-    "url": "/testcat0/2024/10/30/post-test2/",
-    "categories": "testcat0",
-    "excerpt": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vel odio pharetra, sodales orci eu, aliquet tellus. Nunc dignissim lorem quis enim iaculis tempus dictum in mauris.",
-    "featImg": "2024-10-30-post-test.jpg"
-  },
-  
-  {
-    "title": "Post Test",
-    "url": "/testcat/2024/10/24/post-test/",
-    "categories": "testcat",
-    "excerpt": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vel odio pharetra, sodales orci eu, aliquet tellus. Nunc dignissim lorem quis enim iaculis tempus dictum in mauris.",
-    "featImg": "2024-10-24-post-test.jpg"
-  }
-  
 ]
