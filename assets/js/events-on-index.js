@@ -1,1 +1,50 @@
-document.addEventListener("DOMContentLoaded",function(){siteUrl=document.location.origin;const e=(new Date).toISOString().split("T")[0],n=document.querySelector(".upcoming-events"),t=document.querySelector(".concluded-events");fetch("./assets/events.json").then(e=>e.json()).then(c=>{c.sort((e,n)=>new Date(n.date)-new Date(e.date));let s=0,o=0;const a=2,i=2;c.forEach(c=>{const l=c.date>=e,d=`\n            <div class="${l?"upcoming-event":"concluded-event"} ${"cancelled"===c.status?"cancelled":""}">\n                <img src='${siteUrl}/assets/img/icons/${l?"exclamation":"concluded"}.svg' alt="">\n                <div class="event-info">\n                    <p class="date-event">${new Date(c.date).toLocaleDateString()}</p>\n                    ${c.time?`<p class="time-event">${c.time}</p>`:""}\n                    ${c.location?`<p class="place-event">${c.location}</p>`:""}\n                    ${c.type?`<p class="type-event">${c.type}</p>`:""}\n                </div>\n                <h2>${c.title}</h2>\n                ${c.description?`<p>${c.description}</p>`:""}\n                ${"cancelled"===c.status?'<div class="overlay">Cancelled</div>':""}\n            </div>\n        `;l&&s<a?(n.innerHTML+=d,s++):!l&&o<i&&(t.innerHTML+=d,o++)})})["catch"](e=>console.error("Error fetching events:",e))});
+document.addEventListener("DOMContentLoaded", function () {
+
+    siteUrl = document.location.origin;
+
+    const today = new Date().toISOString().split("T")[0];
+    const upcomingEventsContainer = document.querySelector(".upcoming-events");
+    const concludedEventsContainer = document.querySelector(".concluded-events");
+
+    fetch("./assets/events.json")
+        .then((response) => response.json())
+        .then((events) => {
+
+            events.sort((a, b) => new Date(b.date) - new Date(a.date));
+
+            let countUpcoming = 0;
+            let countConcluded = 0;
+            const limitUpcoming = 2;
+            const limitConcluded = 2;
+
+            events.forEach((event) => {
+                const eventDate = event.date;
+                const isUpcoming = eventDate >= today;
+
+                const eventElement = `
+            <div class="${isUpcoming ? "upcoming-event" : "concluded-event"} ${event.status === "cancelled" ? "cancelled" : ""}">
+                <img src='${siteUrl}/assets/img/icons/${isUpcoming ? "exclamation" : "concluded"}.svg' alt="">
+                <div class="event-info">
+                    <p class="date-event">${new Date(event.date).toLocaleDateString()}</p>
+                    ${event.time ? `<p class="time-event">${event.time}</p>` : ""}
+                    ${event.location ? `<p class="place-event">${event.location}</p>` : ""}
+                    ${event.type ? `<p class="type-event">${event.type}</p>` : ""}
+                </div>
+                <h2>${event.title}</h2>
+                ${event.description ? `<p>${event.description}</p>` : ""}
+                ${event.status === "cancelled" ? `<div class="overlay">Cancelled</div>` : ""}
+            </div>
+        `;
+
+
+                if (isUpcoming && countUpcoming < limitUpcoming) {
+                    upcomingEventsContainer.innerHTML += eventElement;
+                    countUpcoming++;
+                } else if (!isUpcoming && countConcluded < limitConcluded) {
+                    concludedEventsContainer.innerHTML += eventElement;
+                    countConcluded++;
+                }
+            });
+        })
+        .catch((error) => console.error("Error fetching events:", error));
+});

@@ -1,1 +1,85 @@
-function plusSlides(e,t){showSlides(slideIndex[t]+=e,t)}function currentSlide(e,t){showSlides(slideIndex[t]=e,t)}function showSlides(e,t){t in slideIndex||(slideIndex[t]=1);const l=document.querySelectorAll(`.mySlides[data-slide-id="${t}"]`),n=document.querySelectorAll(`.dot-container[data-slide-id="${t}"] .dot`);0!==l.length&&0!==n.length&&(e>l.length&&(slideIndex[t]=1),e<1&&(slideIndex[t]=l.length),l.forEach(e=>{e.style.display="none"}),n.forEach(e=>{e.className=e.className.replace(" active","")}),l[slideIndex[t]-1].style.display="block",n[slideIndex[t]-1].className+=" active")}function openFullscreen(e){const t=document.getElementById(e),l=t.querySelectorAll(".text"),n=t.querySelector(".fullscreen-btn");document.fullscreenElement?(document.exitFullscreen?document.exitFullscreen():document.webkitExitFullscreen?document.webkitExitFullscreen():document.msExitFullscreen&&document.msExitFullscreen(),n.textContent="\u26f6"):(t.requestFullscreen?t.requestFullscreen():t.webkitRequestFullscreen?t.webkitRequestFullscreen():t.msRequestFullscreen&&t.msRequestFullscreen(),n.textContent="\u2573"),document.addEventListener("fullscreenchange",()=>{document.fullscreenElement?(l.forEach(e=>e.classList.add("fullscreen-caption")),n.textContent="\u2573"):(l.forEach(e=>e.classList.remove("fullscreen-caption")),n.textContent="\u26f6")})}const slideIndex={};document.addEventListener("DOMContentLoaded",()=>{document.querySelectorAll(".slideshow-container").forEach(e=>{const t=e.getAttribute("data-slide-id");slideIndex[t]=1,showSlides(slideIndex[t],t)})});
+const slideIndex = {};
+
+function plusSlides(n, slideId) {
+    showSlides((slideIndex[slideId] += n), slideId);
+}
+
+function currentSlide(n, slideId) {
+    showSlides((slideIndex[slideId] = n), slideId);
+}
+
+function showSlides(n, slideId) {
+
+    if (!(slideId in slideIndex)) slideIndex[slideId] = 1;
+
+    const slides = document.querySelectorAll(`.mySlides[data-slide-id="${slideId}"]`);
+    const dots = document.querySelectorAll(`.dot-container[data-slide-id="${slideId}"] .dot`);
+
+    if (slides.length === 0 || dots.length === 0) {
+        return;
+    }
+
+    if (n > slides.length) slideIndex[slideId] = 1;
+    if (n < 1) slideIndex[slideId] = slides.length;
+
+    slides.forEach((slide, index) => {
+        slide.style.display = "none";
+    });
+
+    dots.forEach((dot) => {
+        dot.className = dot.className.replace(" active", "");
+    });
+
+    slides[slideIndex[slideId] - 1].style.display = "block";
+    dots[slideIndex[slideId] - 1].className += " active";
+
+}
+
+
+document.addEventListener("DOMContentLoaded", () => {
+    document.querySelectorAll(".slideshow-container").forEach((element) => {
+        const slideId = element.getAttribute("data-slide-id");
+        slideIndex[slideId] = 1;
+        showSlides(slideIndex[slideId], slideId);
+    });
+});
+
+function openFullscreen(slideshowId) {
+    const elem = document.getElementById(slideshowId);
+    const captions = elem.querySelectorAll('.text');
+    const fullscreenBtn = elem.querySelector('.fullscreen-btn');
+
+    if (!document.fullscreenElement) {
+        if (elem.requestFullscreen) {
+            elem.requestFullscreen();
+        } else if (elem.webkitRequestFullscreen) { 
+            elem.webkitRequestFullscreen();
+        } else if (elem.msRequestFullscreen) {
+            elem.msRequestFullscreen();
+        }
+
+        fullscreenBtn.textContent = "╳";
+    } else {
+
+        if (document.exitFullscreen) {
+            document.exitFullscreen();
+        } else if (document.webkitExitFullscreen) {
+            document.webkitExitFullscreen();
+        } else if (document.msExitFullscreen) {
+            document.msExitFullscreen();
+        }
+
+        fullscreenBtn.textContent = "⛶";
+    }
+
+
+    document.addEventListener("fullscreenchange", () => {
+        if (document.fullscreenElement) {
+            captions.forEach(caption => caption.classList.add("fullscreen-caption"));
+            fullscreenBtn.textContent = "╳";
+        } else {
+            captions.forEach(caption => caption.classList.remove("fullscreen-caption"));
+            fullscreenBtn.textContent = "⛶";
+        }
+    });
+}
