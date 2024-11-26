@@ -1,2 +1,2 @@
 User-agent: *
-Sitemap: https://www.francescovitucci.com/sitemap.xml
+Sitemap: https://francescovitucci.com/sitemap.xml
