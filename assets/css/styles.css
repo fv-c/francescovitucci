@@ -3072,6 +3072,9 @@ header.video-index-header-main .video-index-title h1.video-title {
   margin-left: auto;
   margin-right: auto;
 }
+.videoContentsWrapper h2 {
+  margin-top: 75px;
+}
 .videoContentsWrapper h3 {
   margin: 30px auto;
 }
