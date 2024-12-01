@@ -947,7 +947,7 @@ header.header-main a.home-avatar {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  width: 80%;
+  width: 60%;
   min-height: 250px;
   list-style-type: none;
   gap: 30px;
@@ -1100,6 +1100,7 @@ header.header-main a.home-avatar {
   .events .concluded-events {
     flex-direction: column;
     max-width: 100%;
+    width: 80%;
   }
 }
 .events .concluded-events .concluded-event.cancelled .overlay {
