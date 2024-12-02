@@ -273,26 +273,26 @@ h6 {
   font-size: 0.75em;
   text-transform: uppercase;
   font-weight: 600;
-  color: #9EA3B4;
+  color: #8d92a0;
 }
 
 small {
   font-size: 0.75em;
   font: 300;
-  color: #9EA3B4;
+  color: #8d92a0;
   text-transform: uppercase;
 }
 
 p {
   font-size: 1em;
   font-weight: 200;
-  color: #9EA3B4;
+  color: #8d92a0;
   line-height: 2.5em;
 }
 
 hr {
   border-style: solid;
-  color: #9EA3B4;
+  color: #8d92a0;
   opacity: 0.1;
 }
 
@@ -343,7 +343,9 @@ nav.nav-wrap {
   }
 }
 nav.nav-wrap a.nav-logo {
-  height: 40px;
+  height: 30px;
+  margin-top: auto;
+  margin-bottom: auto;
 }
 nav.nav-wrap a.nav-logo svg {
   height: 100%;
@@ -664,7 +666,7 @@ footer.footer-wrapper .footer-email {
   transition: all 0.2s ease-in;
   font-family: "Rubik", Arial, sans-serif;
   font-size: 1em;
-  color: #9EA3B4;
+  color: #8d92a0;
 }
 footer.footer-wrapper .footer-email:hover {
   color: #1C1E24;
@@ -749,7 +751,7 @@ header.header-main a.home-avatar {
   transition: all 0.15s ease-in-out;
 }
 .who-is-he p a:hover {
-  color: #9EA3B4;
+  color: #8d92a0;
 }
 
 .events {
@@ -826,7 +828,7 @@ header.header-main a.home-avatar {
 .events .upcoming-events .upcoming-event p {
   font-size: 0.85em;
   font-family: "Open Sans", Arial, sans-serif;
-  color: #9EA3B4;
+  color: #8d92a0;
   line-height: 1.5em;
   align-self: flex-start;
 }
@@ -994,7 +996,7 @@ header.header-main a.home-avatar {
 .events .concluded-events .concluded-event p {
   font-size: 0.85em;
   font-family: "Open Sans", Arial, sans-serif;
-  font-color: #9EA3B4;
+  font-color: #8d92a0;
   line-height: 1.5em;
   align-self: flex-start;
 }
@@ -1227,7 +1229,7 @@ header.blog-index-header-main .blog-index-title a.read-featured-blog-post:hover 
   display: block;
   text-align: center;
   margin: 0 auto 15px auto;
-  color: #9EA3B4;
+  color: #8d92a0;
   text-transform: uppercase;
   font-family: "Rubik", Arial, sans-serif;
   font-size: 0.5em;
@@ -1248,7 +1250,7 @@ header.blog-index-header-main .blog-index-title a.read-featured-blog-post:hover 
   display: block;
   text-align: center;
   margin: auto;
-  color: #9EA3B4;
+  color: #8d92a0;
   font-family: "Open Sans", Arial, sans-serif;
   font-size: 0.8em;
   line-height: 2em;
@@ -1379,7 +1381,7 @@ header.archive-index-header-main .archive-index-title h1.archive-title {
   content: "";
   position: absolute;
   width: 4px;
-  background-color: #9EA3B4;
+  background-color: #8d92a0;
   top: 140px;
   bottom: 65px;
   left: 50%;
@@ -1500,7 +1502,7 @@ header.archive-index-header-main .archive-index-title h1.archive-title {
   cursor: pointer;
 }
 .blogPostContentWrapper a:hover {
-  color: #9EA3B4;
+  color: #8d92a0;
 }
 .blogPostContentWrapper a.lg-blockquote {
   font-family: "Rubik", Arial, sans-serif;
@@ -1515,7 +1517,7 @@ header.archive-index-header-main .archive-index-title h1.archive-title {
   transition: all 0.3s ease-in-out;
 }
 .blogPostContentWrapper a.lg-blockquote:hover {
-  color: #9EA3B4;
+  color: #8d92a0;
 }
 .blogPostContentWrapper .blogCateoriesWrapper {
   display: flex;
@@ -1686,7 +1688,7 @@ header.works-index-header-main .works-index-title h1.works-title {
   font-family: "Open Sans", Arial, sans-serif;
   font-size: 0.8em;
   font-weight: 400;
-  color: #9EA3B4;
+  color: #8d92a0;
 }
 #works .work .workCardWrapper .workCard .workImage {
   display: block;
@@ -1701,7 +1703,7 @@ header.works-index-header-main .works-index-title h1.works-title {
   font-size: 1em;
   line-height: 1.25em;
   font-family: "Open Sans", Arial, sans-serif;
-  color: #9EA3B4;
+  color: #8d92a0;
 }
 #works .work .workCardWrapper .workCard .workDuration::before {
   content: "Duration: ";
@@ -1729,7 +1731,7 @@ header.works-index-header-main .works-index-title h1.works-title {
   margin: 0 10px;
   text-align: left;
   font-family: "Open Sans", Arial, sans-serif;
-  color: #9EA3B4;
+  color: #8d92a0;
   padding-right: 17px;
 }
 #works .work .workCardWrapper .workCard .premiereWrapper .workPremiere::before {
@@ -1747,7 +1749,7 @@ header.works-index-header-main .works-index-title h1.works-title {
   font-size: 1em;
   line-height: 1.25em;
   font-family: "Open Sans", Arial, sans-serif;
-  color: #9EA3B4;
+  color: #8d92a0;
   padding-right: 17px;
   box-sizing: content-box;
 }
@@ -2043,8 +2045,8 @@ header.bio-index-header-main .bio-index-title .bio-language-buttons .toggle-btn.
 .bio-wrapper .bio-content {
   display: none;
   width: 50%;
-  min-width: 300px;
-  margin: 10px 15px;
+  min-width: 310px;
+  margin: 10px 10px;
 }
 .bio-wrapper .bio-content.visible {
   display: block;
@@ -2160,7 +2162,7 @@ header.research-index-header-main .research-index-title h1.research-title {
   flex-direction: column;
   align-content: center;
   justify-content: space-around;
-  gap: 30px;
+  gap: 60px;
 }
 .researchContentWrapper .affiliationWrapper .affiliations a img {
   max-width: 250px;
@@ -2267,7 +2269,7 @@ header.research-index-header-main .research-index-title h1.research-title {
   flex-direction: column;
   align-items: left;
   justify-content: space-evenly;
-  border: 1px solid #9EA3B4;
+  border: 1px solid #8d92a0;
   border-radius: 6px;
   padding: 10px;
 }
@@ -2559,6 +2561,7 @@ header.events-index-header-main .events-index-title h1.events-title {
   margin: 10px;
   font-size: 1em;
   line-height: 1.5em;
+  text-align: left;
 }
 .events-wrapper .upcoming-events .upcoming-event .event-content a {
   margin: 0 auto 10px 10px;
@@ -2732,6 +2735,7 @@ header.events-index-header-main .events-index-title h1.events-title {
   margin: 10px;
   font-size: 1em;
   line-height: 1.5em;
+  text-align: left;
 }
 .events-wrapper .concluded-events .concluded-event .event-content a {
   margin: 0 auto 10px 10px;
@@ -2933,6 +2937,7 @@ header.video-index-header-main .video-index-title h1.video-title {
   font-size: 2em;
   margin-top: 50px;
   margin-bottom: 25px;
+  text-align: center;
 }
 .photo-container .slideshow-container {
   max-width: 700px;
