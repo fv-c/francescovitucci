@@ -2995,6 +2995,11 @@ header.video-index-header-main .video-index-title h1.video-title {
 .photo-container .slideshow-container .mySlides .text.fullscreen-caption {
   color: #FFFFFF;
 }
+@media screen and (max-width: 425px) {
+  .photo-container .slideshow-container .mySlides .text {
+    font-size: 0.8em;
+  }
+}
 .photo-container .slideshow-container .mySlides .numbertext {
   color: #FFFFFF;
   font-size: 12px;
