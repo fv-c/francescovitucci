@@ -34,6 +34,17 @@
 </div>
 <hr>
 
+<script>
+    const div = document.getElementById("blogLink");
+
+    if (div) {
+      const parentLink = div.parentElement;
+
+      if (parentLink && parentLink.tagName === "A") {
+        parentLink.classList.add("active-page");
+      }
+    }
+  </script>
         <footer class="footer-wrapper">
     <div id="contact" class="contact-slug">
         <h2>Contact</h2>

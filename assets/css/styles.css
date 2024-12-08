@@ -489,10 +489,10 @@ nav.nav-wrap ul.navigation.nav-dark .mediaDropdown .dropdown-content a:hover {
 }
 .toggled-nav-wrapper hr {
   width: 100%;
-  margin: 20px 0 10px 0;
+  margin: 15px 0 10px 0;
 }
 .toggled-nav-wrapper .internal-nav-links-wrapper {
-  margin-top: 10px;
+  margin-top: 5px;
   height: 300px;
 }
 .toggled-nav-wrapper .internal-nav-links-wrapper a.internal-link-wrapper {
@@ -500,6 +500,10 @@ nav.nav-wrap ul.navigation.nav-dark .mediaDropdown .dropdown-content a:hover {
   flex-direction: row;
   justify-content: flex-end;
   align-items: center;
+}
+.toggled-nav-wrapper .internal-nav-links-wrapper .active-page {
+  padding-right: 15px;
+  border-right: 5px solid #517AF4;
 }
 .toggled-nav-wrapper .external-links-wrapper {
   height: 122px;
@@ -509,6 +513,11 @@ nav.nav-wrap ul.navigation.nav-dark .mediaDropdown .dropdown-content a:hover {
   flex-direction: row;
   justify-content: flex-end;
   align-items: center;
+}
+.toggled-nav-wrapper .mail-address {
+  color: #8d92a0;
+  font-size: 0.75em;
+  margin-top: 10px;
 }
 
 .external-link-icon, .internal-link-icon {
@@ -1584,7 +1593,7 @@ header.works-index-header-main {
   align-items: center;
   justify-content: center;
   width: 100%;
-  height: 650px;
+  height: 500px;
   background: #1C1E24;
   background-size: cover;
   background-position: center center;
@@ -1947,7 +1956,7 @@ header.bio-index-header-main {
   align-items: center;
   justify-content: center;
   width: 100%;
-  height: 650px;
+  height: 500px;
   background: #1C1E24;
   background-size: cover;
   background-position: center center;
@@ -2364,7 +2373,7 @@ header.events-index-header-main {
   align-items: center;
   justify-content: center;
   width: 100%;
-  height: 650px;
+  height: 500px;
   background: #1C1E24;
   background-size: cover;
   background-position: center center;
@@ -2782,7 +2791,7 @@ header.media-index-header-main {
   align-items: center;
   justify-content: center;
   width: 100%;
-  height: 650px;
+  height: 500px;
   background: #1C1E24;
   background-size: cover;
   background-position: center center;
@@ -2837,7 +2846,7 @@ header.photo-index-header-main {
   align-items: center;
   justify-content: center;
   width: 100%;
-  height: 650px;
+  height: 500px;
   background: #1C1E24;
   background-size: cover;
   background-position: center center;
@@ -2892,7 +2901,7 @@ header.video-index-header-main {
   align-items: center;
   justify-content: center;
   width: 100%;
-  height: 650px;
+  height: 500px;
   background: #1C1E24;
   background-size: cover;
   background-position: center center;
