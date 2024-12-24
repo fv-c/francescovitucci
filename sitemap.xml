@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
+<loc>https://www.francescovitucci.com/research/csound/2024/12/24/icsc2024-proceedings/</loc>
+<lastmod>2024-12-24T00:00:00+01:00</lastmod>
+</url>
+<url>
 <loc>https://www.francescovitucci.com/bio/</loc>
 </url>
 <url>
@@ -26,5 +30,14 @@
 </url>
 <url>
 <loc>https://www.francescovitucci.com/works/</loc>
+</url>
+<url>
+<loc>https://www.francescovitucci.com/category/research/</loc>
+</url>
+<url>
+<loc>https://www.francescovitucci.com/category/csound/</loc>
+</url>
+<url>
+<loc>https://www.francescovitucci.com/2024/</loc>
 </url>
 </urlset>

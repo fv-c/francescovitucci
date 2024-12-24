@@ -799,7 +799,7 @@ header.header-main a.home-avatar {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  width: 80%;
+  width: 60%;
   min-height: 250px;
   list-style-type: none;
   gap: 30px;
@@ -833,7 +833,7 @@ header.header-main a.home-avatar {
   z-index: 2;
   border: 2px solid;
   border-radius: 100%;
-  padding: 1px;
+  padding: 2px;
   filter: invert(42%) sepia(93%) saturate(1500%) hue-rotate(-25deg) brightness(95%) contrast(100%);
 }
 .events .upcoming-events .upcoming-event h2 {
@@ -950,6 +950,7 @@ header.header-main a.home-avatar {
   .events .upcoming-events {
     flex-direction: column;
     max-width: 100%;
+    width: 80%;
   }
 }
 .events .upcoming-events .upcoming-event.cancelled .overlay {
@@ -998,7 +999,7 @@ header.header-main a.home-avatar {
   height: 30px;
   position: absolute;
   align-self: flex-end;
-  z-index: 999;
+  z-index: 2;
   border: 2px solid;
   border-radius: 100%;
   padding: 2px;
@@ -1083,7 +1084,6 @@ header.header-main a.home-avatar {
   margin-top: -3px;
 }
 .events .concluded-events .concluded-event .event-info .place-event::before {
-  content: "📍 Where: ";
   content: "";
   display: inline-block;
   width: 13px;
@@ -1096,7 +1096,6 @@ header.header-main a.home-avatar {
   margin-top: -3px;
 }
 .events .concluded-events .concluded-event .event-info .type-event::before {
-  content: "📍 Where: ";
   content: "";
   display: inline-block;
   width: 13px;
@@ -2045,6 +2044,11 @@ header.bio-index-header-main .bio-index-title .bio-language-buttons .toggle-btn.
   border: 1px solid #000000;
   border-radius: 4px;
   cursor: pointer;
+}
+@media screen and (max-width: 425px) {
+  .mdDownload {
+    margin: 50px auto 0 auto;
+  }
 }
 .mdDownload p {
   color: #000000;

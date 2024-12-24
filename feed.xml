@@ -1,1 +1,25 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="https://www.francescovitucci.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://www.francescovitucci.com/" rel="alternate" type="text/html" /><updated>2024-12-17T12:40:57+01:00</updated><id>https://www.francescovitucci.com/feed.xml</id><title type="html">Francesco Vitucci</title><subtitle>Francesco Vitucci - Home.</subtitle></feed>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="https://www.francescovitucci.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://www.francescovitucci.com/" rel="alternate" type="text/html" /><updated>2024-12-24T19:50:19+01:00</updated><id>https://www.francescovitucci.com/feed.xml</id><title type="html">Francesco Vitucci</title><subtitle>Francesco Vitucci - Home.</subtitle><entry><title type="html">ICSC 2024 ProceedingsNow Available</title><link href="https://www.francescovitucci.com/research/csound/2024/12/24/icsc2024-proceedings/" rel="alternate" type="text/html" title="ICSC 2024 ProceedingsNow Available" /><published>2024-12-24T00:00:00+01:00</published><updated>2024-12-24T00:00:00+01:00</updated><id>https://www.francescovitucci.com/research/csound/2024/12/24/icsc2024-proceedings</id><content type="html" xml:base="https://www.francescovitucci.com/research/csound/2024/12/24/icsc2024-proceedings/"><![CDATA[<p class="dropCap">
+    The proceedings for the International Csound Conference 2024 (ICSC 2024) have been officially published. This collection includes a diverse range of papers, presentations, and research contributions from leading composers, technologists, and sound artists engaged in the development and creative use of Csound.
+</p>
+
+<p>
+    I am glad to share that my publication, <strong>Opening Mind by Opening Architecture: Analysis Strategies</strong>, is part of the proceedings. This paper, developed together with a team composed of Giuseppe Silvi, Daniele Giuseppe Annese, Francesco Scagliola, Anthony Di Furia and myself, explores the construction of analytical tools that aim to create awareness in the DSP design. The full text of the paper can be downloaded from the following link:
+</p>
+
+<a href="https://www.researchgate.net/publication/386420091_Opening_mind_by_opening_architecture_analysis_strategies" target="_blank" class="lg-blockquote">Download</a>
+
+<p>
+    The proceedings offer valuable insights into cutting-edge techniques, new tools, and experimental approaches, reflecting the ongoing evolution of the Csound community and the innovative projects shaping the future of computer music.
+</p>
+
+<p>
+    You can access the full proceedings through the following link:
+</p>
+
+<a href="https://doi.org/10.21939/icsc2024" target="_blank" class="lg-blockquote">ICSC 2024 Proceedings</a>
+
+<p>
+    Special thanks to Alex Hofmann and Sonja Stojak of mdw University of Music and Performing Arts Vienna, editors of the proceedings.
+</p>
+
+<p>Stay tuned for more updates and future events!</p>]]></content><author><name>Francesco Vitucci</name></author><category term="[&quot;research&quot;, &quot;csound&quot;]" /><summary type="html"><![CDATA[The proceedings for the ICSC 2024 are now available. My research, "Opening Mind by Opening Architecture: Analysis Strategies", explores the construction of analytical tools that aim to create awareness in the DSP design.]]></summary></entry></feed>
