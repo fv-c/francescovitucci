@@ -176,59 +176,70 @@ document.addEventListener("DOMContentLoaded", function () {
       currentYear = null;
 
       // Eventi passati (recent events)
-      events
-        .filter((event) => event.date < today)
-        .sort((a, b) => new Date(b.date) - new Date(a.date))
-        .forEach((event) => {
-          const eventYear = new Date(event.date).getFullYear();
-          if (eventYear !== currentYear) {
-            const yearDivider = document.createElement("h2");
-            yearDivider.className = "year-divider";
-            yearDivider.textContent = eventYear;
-            concludedEventsContainer.appendChild(yearDivider);
-            currentYear = eventYear;
-          }
+events
+.filter((event) => event.date < today)
+.sort((a, b) => new Date(b.date) - new Date(a.date))
+.forEach((event) => {
+  const eventYear = new Date(event.date).getFullYear();
+  if (eventYear !== currentYear) {
+    const yearDivider = document.createElement("h2");
+    yearDivider.className = "year-divider";
+    yearDivider.textContent = eventYear;
+    concludedEventsContainer.appendChild(yearDivider);
+    currentYear = eventYear;
+  }
 
-          const eventElement = document.createElement("div");
-          eventElement.className = "concluded-event";
+  const eventElement = document.createElement("div");
+  eventElement.className = "concluded-event";
 
-          eventElement.innerHTML = `
-                        <div class="event-info-wrapper">
-                            <div class="event-info">
-                                <p class="date-event">${new Date(
-                                  event.date
-                                ).getDate()} ${
-            [
-              "JAN.",
-              "FEB.",
-              "MAR.",
-              "APR.",
-              "MAY.",
-              "JUNE",
-              "JULY",
-              "AUG.",
-              "SEPT.",
-              "OCT.",
-              "NOV.",
-              "DEC.",
-            ][new Date(event.date).getMonth()]
-          }</p>
-                            </div>
-                        </div>
-                        <div class="event-content">
-                            <h2>${event.title}</h2>
-                            ${
-                              event.description
-                                ? `<p>${event.description}</p>`
-                                : ""
-                            }
-                        </div>
-                    `;
+  eventElement.innerHTML = `
+    <div class="event-info-wrapper">
+        <div class="event-info">
+            <p class="date-event">${new Date(
+              event.date
+            ).getDate()} ${
+    [
+      "JAN.",
+      "FEB.",
+      "MAR.",
+      "APR.",
+      "MAY.",
+      "JUNE",
+      "JULY",
+      "AUG.",
+      "SEPT.",
+      "OCT.",
+      "NOV.",
+      "DEC.",
+    ][new Date(event.date).getMonth()]
+  }</p>
+            ${
+              event.time
+                ? `<p class="time-event">${event.time}</p>`
+                : ""
+            }
+            ${
+              event.location
+                ? `<p class="place-event">${event.location}</p>`
+                : ""
+            }
+        </div>
+    </div>
+    <div class="event-content">
+        <h2>${event.title}</h2>
+        ${
+          event.description
+            ? `<p>${event.description}</p>`
+            : ""
+        }
+    </div>
+  `;
 
-          concludedEventsContainer.appendChild(eventElement);
-          concludedEventsContainer.appendChild(
-            document.createElement("hr")
-          ).style.width = "75%";
-        });
+  concludedEventsContainer.appendChild(eventElement);
+  concludedEventsContainer.appendChild(
+    document.createElement("hr")
+  ).style.width = "75%";
+});
+
     });
 });
