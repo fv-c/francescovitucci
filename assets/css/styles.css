@@ -843,6 +843,11 @@ header.header-main a.home-avatar {
   margin-bottom: 10px;
   align-self: flex-start;
 }
+.events .upcoming-events .upcoming-event .add-to-calendar {
+  font-size: 0.8em;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
 .events .upcoming-events .upcoming-event p {
   font-size: 0.85em;
   font-family: "Open Sans", Arial, sans-serif;
