@@ -840,13 +840,14 @@ header.header-main a.home-avatar {
   font-family: "Rubik", Arial, sans-serif;
   font-weight: 700;
   font-size: 1.1em;
-  margin-bottom: 10px;
+  margin-top: 1em;
+  margin-bottom: 1em;
   align-self: flex-start;
 }
 .events .upcoming-events .upcoming-event .add-to-calendar {
   font-size: 0.8em;
-  margin-top: 1em;
-  margin-bottom: 1em;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
 }
 .events .upcoming-events .upcoming-event p {
   font-size: 0.85em;
@@ -1014,7 +1015,8 @@ header.header-main a.home-avatar {
   font-family: "Rubik", Arial, sans-serif;
   font-weight: 700;
   font-size: 1.1em;
-  margin-bottom: 10px;
+  margin-bottom: 1em;
+  margin-top: 1em;
   align-self: flex-start;
 }
 .events .concluded-events .concluded-event p {
