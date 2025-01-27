@@ -2264,6 +2264,30 @@ header.research-index-header-main .research-index-title h1.research-title {
   font-size: 1em;
   color: #517AF4;
 }
+.researchContentWrapper .linksWrapper .scholarWrapper {
+  display: flex;
+  max-width: 29%;
+  min-width: 300px;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
+}
+.researchContentWrapper .linksWrapper .scholarWrapper .scholarIcon {
+  width: 25px;
+  height: 25px;
+}
+.researchContentWrapper .linksWrapper .scholarWrapper .scholarTitle {
+  font-family: "Rubik", Arial, sans-serif;
+  font-weight: 500;
+  font-size: 1em;
+}
+.researchContentWrapper .linksWrapper .scholarWrapper .scholarLink {
+  font-family: "Open Sans", Arial, sans-serif;
+  font-weight: 500;
+  font-size: 1em;
+  color: #517AF4;
+}
 .researchContentWrapper .repoWrapper {
   display: flex;
   max-width: 33%;
