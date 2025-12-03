@@ -1601,9 +1601,9 @@ header.works-index-header-main {
   width: 100%;
   height: 500px;
   background: #1C1E24;
-  background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
+  size: cover;
+  position: center center;
+  repeat: no-repeat;
 }
 header.works-index-header-main .overlay-dark {
   position: absolute;
