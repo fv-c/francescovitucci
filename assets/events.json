@@ -172,5 +172,15 @@
     "location": "Auditorium \"Nino Rota\", Via Cifarelli 26, Bari",
     "description": "Commissioned piece: \"Del quieto smarrirsi\" (2026), for orchestra.<br>Musicians: ICO Metropolitana di Bari<br>Conductor: Neil Thomson",
     "status": "active"
+  },
+  {
+    "title": "E.C.O. 2026",
+    "date": "2026-01-09",
+    "time": "16:00",
+    "type": "Talk",
+    "location": "Online",
+    "description": "E.C.O. 2026 - Elettronica Condivisa Online - La roughness come parametro per analizzare ricorrenze musicali, simboliche e spettrali, percettivamente rilevanti",
+    "status": "active",
+    "url": "https://conscfv.it/eventi/e-c-o-2026-elettronica-condivisa-online/"
   }
 ]
