@@ -182,5 +182,14 @@
     "description": "E.C.O. 2026 - Elettronica Condivisa Online - La roughness come parametro per analizzare ricorrenze musicali, simboliche e spettrali, percettivamente rilevanti",
     "status": "active",
     "url": "https://conscfv.it/eventi/e-c-o-2026-elettronica-condivisa-online/"
+  },
+  {
+    "title": "Talenti",
+    "date": "2026-05-14",
+    "time": "20:00",
+    "type": "Concert",
+    "location": "Auditorium \"Nino Rota\", Via Cifarelli 26, Bari",
+    "description": "Commissioned piece: \"Gesto primo\" (2026), for reciting voice, artificial reciting voices on support and orchestra.<br>Musicians: ICO Metropolitana di Bari<br>Conductor: Jean François Verdier",
+    "status": "active"
   }
 ]

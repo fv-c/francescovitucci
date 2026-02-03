@@ -685,5 +685,19 @@
     "info1_url": "https://www.riviera24.it/2025/12/al-centrale-evento-conclusivo-del-progetto-nuova-musica-per-tutti-del-liceo-cassini-di-sanremo-943961/",
     "info2_url": "https://www.bordighera.tv/2025/09/la-nuova-stagione-dellorchestra-sinfonica-di-sanremo-2025-2026/",
     "buy_url": "https://www.schott-music.com/en/innesto-habitat-della-memoria-no795927.html"
+  },
+  {
+    "title": "Del quieto smarrirsi",
+    "subtitle": "per orchestra",
+    "year": 2026,
+    "duration": "8 min",
+    "instruments": [
+      "orchestra"
+    ],
+    "description": "Perdersi è abitare un tempo senza direzione. Del quieto smarrirsi (2026) indaga una condizione di perdita non drammatica, ma progressiva e quasi impercettibile: uno stato in cui l’orientamento si dissolve senza fratture, per lenta rarefazione. Il titolo allude a uno smarrimento che non coincide con il crollo, bensì con una sospensione del senso, con l’attenuarsi delle coordinate che normalmente strutturano il gesto, il tempo e l’ascolto.<br>La scrittura musicale si sviluppa come un processo di scivolamento: materiali riconoscibili vengono gradualmente sottratti alla loro funzione originaria, sottoposti a micro-variazioni, alterazioni temporali e timbriche che ne compromettono la stabilità percettiva. Il brano esplora questo campo di forze, in cui la continuità è mantenuta non dalla direzione, ma dalla persistenza. Non c'è una perdita da risolvere. Al contrario, si assume lo smarrimento come condizione fertile, come luogo di possibilità, in cui la musica si sottrae alla necessità di affermare e sceglie, invece, di permanere.",
+    "premiere": "Auditorium Nino Rota, 29-01-2026",
+    "image": "smarrirsi.jpeg",
+    "info1_url": "https://www.cittametropolitana.ba.it/vivere_il_comune/eventi/evento_352.html",
+    "info2_url": "https://quotidianodibari.it/centoventi-concerti-nuove-produzioni-e-30-prime-esecuzioni-assolute/"
   }
 ]
