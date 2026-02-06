@@ -3203,4 +3203,35 @@ header.video-index-header-main .video-index-title h1.video-title {
   color: #517AF4;
 }
 
+.policyWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 150px;
+}
+.policyWrapper .policyHeader {
+  font-size: 4.5em;
+  letter-spacing: 0.1rem;
+  -webkit-transform: scale(1, 1.1);
+}
+.policyWrapper .mainPolicy {
+  font-family: "Open Sans", Arial, sans-serif;
+  font-weight: 200;
+  font-size: 1.25em;
+  margin-top: 50px;
+  color: #8d92a0;
+  width: 50%;
+}
+.policyWrapper .backP {
+  font-family: "Open Sans", Arial, sans-serif;
+  font-weight: 400;
+  font-size: 1.25em;
+  margin-top: 50px;
+  color: #1C1E24;
+}
+.policyWrapper .backP a {
+  color: #517AF4;
+}
+
 /*# sourceMappingURL=styles.css.map */
