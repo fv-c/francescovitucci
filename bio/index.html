@@ -583,6 +583,26 @@
         });
     });
 </script>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  document.querySelectorAll("img").forEach(function (img) {
+    img.addEventListener("contextmenu", function (e) {
+      e.preventDefault();
+    });
+  });
+});
+</script>
+<script>
+$(document).on("contextmenu", "img", function (e) {
+  e.preventDefault();
+});
+</script>
+<script>
+    $(document).on("dragstart", "img", function (e) {
+  e.preventDefault();
+});
+</script>
   <script>
     $('.bioSection h2').after('<hr class="bioSectionSeparator">')
 
