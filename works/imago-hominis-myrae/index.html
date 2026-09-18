@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="../../favicon.ico?v=2" sizes="any">
+    <link rel="icon" href="../../favicon.svg?v=2" type="image/svg+xml">
+    <title>Francesco Vitucci | Imago Hominis Myrae</title>
+    <meta name="description" content="The IHM cycle is based on the idea of ​​&quot;collective memory&quot; and how it can leave an emotional mark on the individual. Once entrusted to exclusively human..." />
+    <link rel="canonical" href="https://www.francescovitucci.com/works/imago-hominis-myrae/" />
+    <link rel="alternate" hreflang="en" href="https://www.francescovitucci.com/works/imago-hominis-myrae/?lang=en" />
+    <link rel="alternate" hreflang="it" href="https://www.francescovitucci.com/works/imago-hominis-myrae/?lang=it" />
+    <link rel="alternate" hreflang="x-default" href="https://www.francescovitucci.com/works/imago-hominis-myrae/" />
+    <meta name="robots" content="index,follow" />
+    <meta property="og:title" content="Francesco Vitucci | Imago Hominis Myrae" />
+    <meta property="og:description" content="The IHM cycle is based on the idea of ​​&quot;collective memory&quot; and how it can leave an emotional mark on the individual. Once entrusted to exclusively human..." />
+    <meta property="og:url" content="https://www.francescovitucci.com/works/imago-hominis-myrae/" />
+    <meta property="og:image" content="https://www.francescovitucci.com/site-assets/works/myra-up-crop-comp.jpg" />
+    <meta property="og:type" content="music.song" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Francesco Vitucci | Imago Hominis Myrae" />
+    <meta name="twitter:description" content="The IHM cycle is based on the idea of ​​&quot;collective memory&quot; and how it can leave an emotional mark on the individual. Once entrusted to exclusively human..." />
+    <meta name="twitter:image" content="https://www.francescovitucci.com/site-assets/works/myra-up-crop-comp.jpg" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "MusicComposition",
+        "name": "Imago Hominis Myrae",
+        "url": "https://www.francescovitucci.com/works/imago-hominis-myrae/",
+        "description": "The IHM cycle is based on the idea of ​​\"collective memory\" and how it can leave an emotional mark on the individual. Once entrusted to exclusively human...",
+        "composer": {
+          "@type": "Person",
+          "name": "Francesco Vitucci",
+          "url": "https://www.francescovitucci.com/"
+        },
+        "dateCreated": "2025",
+        "image": "https://www.francescovitucci.com/site-assets/works/myra-up-crop-comp.jpg"
+      }
+    </script>
+    <script>
+      const storedTheme = localStorage.getItem('fv-site-theme');
+      const initialTheme =
+        storedTheme === 'light' || storedTheme === 'dark'
+          ? storedTheme
+          : window.matchMedia('(prefers-color-scheme: dark)').matches
+            ? 'dark'
+            : 'light';
+      document.documentElement.dataset.theme = initialTheme;
+
+      const normalizeLanguage = (value) => {
+        const tag = String(value || '').trim().toLowerCase();
+        if (tag === 'it' || tag.indexOf('it-') === 0 || tag === 'ita') return 'it';
+        if (tag === 'en' || tag.indexOf('en-') === 0 || tag === 'eng') return 'en';
+        return undefined;
+      };
+      const browserLanguage = () => {
+        const candidates = (navigator.languages || []).concat(navigator.language || []);
+        for (let index = 0; index < candidates.length; index += 1) {
+          const resolved = normalizeLanguage(candidates[index]);
+          if (resolved) return resolved;
+        }
+        return undefined;
+      };
+      document.documentElement.lang =
+        normalizeLanguage(new URLSearchParams(window.location.search).get('lang')) ||
+        normalizeLanguage(localStorage.getItem('fv-site-lang')) ||
+        browserLanguage() ||
+        'en';
+    </script>
+    <!-- generated:work-page -->
+    <script type="module" crossorigin src="../../assets/react-CRB3T2We.js"></script>
+    <script type="module" crossorigin src="../../assets/main-CzzpzW52.js"></script>
+    <link rel="stylesheet" crossorigin href="../../assets/main-QR89egZm.css">
+  </head>
+  <body data-page="work" data-work-id="imago-hominis-myrae">
+    <div id="root"></div>
+  </body>
+</html>

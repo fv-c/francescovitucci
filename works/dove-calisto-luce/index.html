@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="../../favicon.ico?v=2" sizes="any">
+    <link rel="icon" href="../../favicon.svg?v=2" type="image/svg+xml">
+    <title>Francesco Vitucci | Dove Calisto luce</title>
+    <meta name="description" content="Dove Calisto luce by Francesco Vitucci for piano and percussion (2019)" />
+    <link rel="canonical" href="https://www.francescovitucci.com/works/dove-calisto-luce/" />
+    <link rel="alternate" hreflang="en" href="https://www.francescovitucci.com/works/dove-calisto-luce/?lang=en" />
+    <link rel="alternate" hreflang="it" href="https://www.francescovitucci.com/works/dove-calisto-luce/?lang=it" />
+    <link rel="alternate" hreflang="x-default" href="https://www.francescovitucci.com/works/dove-calisto-luce/" />
+    <meta name="robots" content="index,follow" />
+    <meta property="og:title" content="Francesco Vitucci | Dove Calisto luce" />
+    <meta property="og:description" content="Dove Calisto luce by Francesco Vitucci for piano and percussion (2019)" />
+    <meta property="og:url" content="https://www.francescovitucci.com/works/dove-calisto-luce/" />
+    <meta property="og:image" content="https://www.francescovitucci.com/site-assets/works/dove-calisto-luce.jpg" />
+    <meta property="og:type" content="music.song" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Francesco Vitucci | Dove Calisto luce" />
+    <meta name="twitter:description" content="Dove Calisto luce by Francesco Vitucci for piano and percussion (2019)" />
+    <meta name="twitter:image" content="https://www.francescovitucci.com/site-assets/works/dove-calisto-luce.jpg" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "MusicComposition",
+        "name": "Dove Calisto luce",
+        "url": "https://www.francescovitucci.com/works/dove-calisto-luce/",
+        "description": "Dove Calisto luce by Francesco Vitucci for piano and percussion (2019)",
+        "composer": {
+          "@type": "Person",
+          "name": "Francesco Vitucci",
+          "url": "https://www.francescovitucci.com/"
+        },
+        "dateCreated": "2019",
+        "image": "https://www.francescovitucci.com/site-assets/works/dove-calisto-luce.jpg"
+      }
+    </script>
+    <script>
+      const storedTheme = localStorage.getItem('fv-site-theme');
+      const initialTheme =
+        storedTheme === 'light' || storedTheme === 'dark'
+          ? storedTheme
+          : window.matchMedia('(prefers-color-scheme: dark)').matches
+            ? 'dark'
+            : 'light';
+      document.documentElement.dataset.theme = initialTheme;
+
+      const normalizeLanguage = (value) => {
+        const tag = String(value || '').trim().toLowerCase();
+        if (tag === 'it' || tag.indexOf('it-') === 0 || tag === 'ita') return 'it';
+        if (tag === 'en' || tag.indexOf('en-') === 0 || tag === 'eng') return 'en';
+        return undefined;
+      };
+      const browserLanguage = () => {
+        const candidates = (navigator.languages || []).concat(navigator.language || []);
+        for (let index = 0; index < candidates.length; index += 1) {
+          const resolved = normalizeLanguage(candidates[index]);
+          if (resolved) return resolved;
+        }
+        return undefined;
+      };
+      document.documentElement.lang =
+        normalizeLanguage(new URLSearchParams(window.location.search).get('lang')) ||
+        normalizeLanguage(localStorage.getItem('fv-site-lang')) ||
+        browserLanguage() ||
+        'en';
+    </script>
+    <!-- generated:work-page -->
+    <script type="module" crossorigin src="../../assets/react-CRB3T2We.js"></script>
+    <script type="module" crossorigin src="../../assets/main-CzzpzW52.js"></script>
+    <link rel="stylesheet" crossorigin href="../../assets/main-QR89egZm.css">
+  </head>
+  <body data-page="work" data-work-id="dove-calisto-luce">
+    <div id="root"></div>
+  </body>
+</html>

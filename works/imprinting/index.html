@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="../../favicon.ico?v=2" sizes="any">
+    <link rel="icon" href="../../favicon.svg?v=2" type="image/svg+xml">
+    <title>Francesco Vitucci | Imprinting</title>
+    <meta name="description" content="&quot;COMPORRE INSIEME&quot; sinergie fra musica elettronica e arti visive, evento in collaborazione L&#39;ARTIFICIO e SIMC. Video by Daniele Lunghini" />
+    <link rel="canonical" href="https://www.francescovitucci.com/works/imprinting/" />
+    <link rel="alternate" hreflang="en" href="https://www.francescovitucci.com/works/imprinting/?lang=en" />
+    <link rel="alternate" hreflang="it" href="https://www.francescovitucci.com/works/imprinting/?lang=it" />
+    <link rel="alternate" hreflang="x-default" href="https://www.francescovitucci.com/works/imprinting/" />
+    <meta name="robots" content="index,follow" />
+    <meta property="og:title" content="Francesco Vitucci | Imprinting" />
+    <meta property="og:description" content="&quot;COMPORRE INSIEME&quot; sinergie fra musica elettronica e arti visive, evento in collaborazione L&#39;ARTIFICIO e SIMC. Video by Daniele Lunghini" />
+    <meta property="og:url" content="https://www.francescovitucci.com/works/imprinting/" />
+    <meta property="og:image" content="https://www.francescovitucci.com/site-assets/works/imprinting.jpg" />
+    <meta property="og:type" content="music.song" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Francesco Vitucci | Imprinting" />
+    <meta name="twitter:description" content="&quot;COMPORRE INSIEME&quot; sinergie fra musica elettronica e arti visive, evento in collaborazione L&#39;ARTIFICIO e SIMC. Video by Daniele Lunghini" />
+    <meta name="twitter:image" content="https://www.francescovitucci.com/site-assets/works/imprinting.jpg" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "MusicComposition",
+        "name": "Imprinting",
+        "url": "https://www.francescovitucci.com/works/imprinting/",
+        "description": "\"COMPORRE INSIEME\" sinergie fra musica elettronica e arti visive, evento in collaborazione L'ARTIFICIO e SIMC. Video by Daniele Lunghini",
+        "composer": {
+          "@type": "Person",
+          "name": "Francesco Vitucci",
+          "url": "https://www.francescovitucci.com/"
+        },
+        "dateCreated": "2018",
+        "image": "https://www.francescovitucci.com/site-assets/works/imprinting.jpg"
+      }
+    </script>
+    <script>
+      const storedTheme = localStorage.getItem('fv-site-theme');
+      const initialTheme =
+        storedTheme === 'light' || storedTheme === 'dark'
+          ? storedTheme
+          : window.matchMedia('(prefers-color-scheme: dark)').matches
+            ? 'dark'
+            : 'light';
+      document.documentElement.dataset.theme = initialTheme;
+
+      const normalizeLanguage = (value) => {
+        const tag = String(value || '').trim().toLowerCase();
+        if (tag === 'it' || tag.indexOf('it-') === 0 || tag === 'ita') return 'it';
+        if (tag === 'en' || tag.indexOf('en-') === 0 || tag === 'eng') return 'en';
+        return undefined;
+      };
+      const browserLanguage = () => {
+        const candidates = (navigator.languages || []).concat(navigator.language || []);
+        for (let index = 0; index < candidates.length; index += 1) {
+          const resolved = normalizeLanguage(candidates[index]);
+          if (resolved) return resolved;
+        }
+        return undefined;
+      };
+      document.documentElement.lang =
+        normalizeLanguage(new URLSearchParams(window.location.search).get('lang')) ||
+        normalizeLanguage(localStorage.getItem('fv-site-lang')) ||
+        browserLanguage() ||
+        'en';
+    </script>
+    <!-- generated:work-page -->
+    <script type="module" crossorigin src="../../assets/react-CRB3T2We.js"></script>
+    <script type="module" crossorigin src="../../assets/main-CzzpzW52.js"></script>
+    <link rel="stylesheet" crossorigin href="../../assets/main-QR89egZm.css">
+  </head>
+  <body data-page="work" data-work-id="imprinting">
+    <div id="root"></div>
+  </body>
+</html>

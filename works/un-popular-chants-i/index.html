@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="../../favicon.ico?v=2" sizes="any">
+    <link rel="icon" href="../../favicon.svg?v=2" type="image/svg+xml">
+    <title>Francesco Vitucci | (Un)popular Chants I</title>
+    <meta name="description" content="(Un)popular chants is a series of small pieces for solo and electronic instruments that recall themes relating to singing, to the voice and, by extension,..." />
+    <link rel="canonical" href="https://www.francescovitucci.com/works/un-popular-chants-i/" />
+    <link rel="alternate" hreflang="en" href="https://www.francescovitucci.com/works/un-popular-chants-i/?lang=en" />
+    <link rel="alternate" hreflang="it" href="https://www.francescovitucci.com/works/un-popular-chants-i/?lang=it" />
+    <link rel="alternate" hreflang="x-default" href="https://www.francescovitucci.com/works/un-popular-chants-i/" />
+    <meta name="robots" content="index,follow" />
+    <meta property="og:title" content="Francesco Vitucci | (Un)popular Chants I" />
+    <meta property="og:description" content="(Un)popular chants is a series of small pieces for solo and electronic instruments that recall themes relating to singing, to the voice and, by extension,..." />
+    <meta property="og:url" content="https://www.francescovitucci.com/works/un-popular-chants-i/" />
+    <meta property="og:image" content="https://www.francescovitucci.com/site-assets/works/unpopular-chants-i.jpg" />
+    <meta property="og:type" content="music.song" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Francesco Vitucci | (Un)popular Chants I" />
+    <meta name="twitter:description" content="(Un)popular chants is a series of small pieces for solo and electronic instruments that recall themes relating to singing, to the voice and, by extension,..." />
+    <meta name="twitter:image" content="https://www.francescovitucci.com/site-assets/works/unpopular-chants-i.jpg" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "MusicComposition",
+        "name": "(Un)popular Chants I",
+        "url": "https://www.francescovitucci.com/works/un-popular-chants-i/",
+        "description": "(Un)popular chants is a series of small pieces for solo and electronic instruments that recall themes relating to singing, to the voice and, by extension,...",
+        "composer": {
+          "@type": "Person",
+          "name": "Francesco Vitucci",
+          "url": "https://www.francescovitucci.com/"
+        },
+        "dateCreated": "2022",
+        "image": "https://www.francescovitucci.com/site-assets/works/unpopular-chants-i.jpg"
+      }
+    </script>
+    <script>
+      const storedTheme = localStorage.getItem('fv-site-theme');
+      const initialTheme =
+        storedTheme === 'light' || storedTheme === 'dark'
+          ? storedTheme
+          : window.matchMedia('(prefers-color-scheme: dark)').matches
+            ? 'dark'
+            : 'light';
+      document.documentElement.dataset.theme = initialTheme;
+
+      const normalizeLanguage = (value) => {
+        const tag = String(value || '').trim().toLowerCase();
+        if (tag === 'it' || tag.indexOf('it-') === 0 || tag === 'ita') return 'it';
+        if (tag === 'en' || tag.indexOf('en-') === 0 || tag === 'eng') return 'en';
+        return undefined;
+      };
+      const browserLanguage = () => {
+        const candidates = (navigator.languages || []).concat(navigator.language || []);
+        for (let index = 0; index < candidates.length; index += 1) {
+          const resolved = normalizeLanguage(candidates[index]);
+          if (resolved) return resolved;
+        }
+        return undefined;
+      };
+      document.documentElement.lang =
+        normalizeLanguage(new URLSearchParams(window.location.search).get('lang')) ||
+        normalizeLanguage(localStorage.getItem('fv-site-lang')) ||
+        browserLanguage() ||
+        'en';
+    </script>
+    <!-- generated:work-page -->
+    <script type="module" crossorigin src="../../assets/react-CRB3T2We.js"></script>
+    <script type="module" crossorigin src="../../assets/main-CzzpzW52.js"></script>
+    <link rel="stylesheet" crossorigin href="../../assets/main-QR89egZm.css">
+  </head>
+  <body data-page="work" data-work-id="un-popular-chants-i">
+    <div id="root"></div>
+  </body>
+</html>
